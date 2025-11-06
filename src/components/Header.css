@@ -1,0 +1,374 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  backdrop-filter: none;
+  transition: all 0.4s ease;
+  padding: 20px 0;
+}
+
+/* Khi scroll - header "nổi lên" */
+.header.scrolled {
+  background: rgba(113, 69, 40, 0.95);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(90, 52, 25, 0.3);
+  border-bottom: 2px solid rgba(198, 165, 130, 0.5);
+  padding: 15px 0;
+}
+
+/* Container với layout NGANG: Logo - Options - Button */
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Logo bên trái */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Logo Image - PNG với nền trong suốt */
+.logo-image {
+  width: 120px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Logo nhỏ lại khi scroll */
+.header.scrolled .logo-image {
+  width: 120px;
+}
+
+/* Navigation menu ở GIỮA */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  /* flex: 1; */
+  justify-content: center;
+}
+
+.nav-link {
+  color: var(--color-light);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 0;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Underline effect on hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Save The Date Button bên PHẢI */
+.nav-button {
+  background: var(--color-primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(198, 165, 130, 0.4);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-button:hover {
+  background: var(--color-lightest);
+  color: var(--color-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(198, 165, 130, 0.6);
+  border-color: var(--color-primary);
+}
+
+/* Mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  z-index: 1002;
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+.mobile-menu-icon:hover {
+  color: var(--color-lightest);
+  transform: scale(1.1);
+}
+
+/* Mobile menu overlay */
+.menu-overlay {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .header-container {
+    padding: 0 30px;
+    gap: 20px;
+  }
+
+  .nav-menu {
+    gap: 25px;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  .nav-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .header-container {
+    padding: 0 20px;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .logo-image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .header.scrolled .logo-image {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header.scrolled {
+    padding: 12px 0;
+  }
+
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    backdrop-filter: blur(5px);
+  }
+
+  .logo-image {
+    height: 80px;
+    width: 80px;
+  }
+
+  .header.scrolled .logo-image {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* Hide Save The Date button on mobile (it will be in menu) */
+  .header-container > .nav-button {
+    display: none;
+  }
+
+  /* Mobile menu dropdown */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 350px;
+    height: 100vh;
+    background: rgba(113, 69, 40, 0.98);
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    padding: 100px 30px 40px 30px;
+    gap: 0;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 3px solid var(--color-primary);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    z-index: 1001;
+    justify-content: flex-start;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(198, 165, 130, 0.2);
+    color: var(--color-light);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-link:last-of-type {
+    border-bottom: 2px solid rgba(198, 165, 130, 0.3);
+    margin-bottom: 30px;
+  }
+
+  .nav-link:hover {
+    background: rgba(198, 165, 130, 0.1);
+    color: var(--color-primary);
+  }
+
+  /* Save The Date button inside mobile menu */
+  .nav-menu::after {
+    content: "Save The Date";
+    background: var(--color-primary);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(198, 165, 130, 0.4);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    width: auto;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+
+  /* Smooth scrollbar for mobile menu */
+  .nav-menu::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .nav-menu::-webkit-scrollbar-track {
+    background: rgba(198, 165, 130, 0.1);
+  }
+
+  .nav-menu::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    height: 75px;
+    width: 75px;
+  }
+
+  .header.scrolled .logo-image {
+    height: 75px;
+    width: 75px;
+  }
+
+  .nav-menu {
+    width: 90%;
+    padding: 90px 20px 30px 20px;
+  }
+
+  .mobile-menu-icon {
+    font-size: 1.6rem;
+  }
+}
+
+/* Smooth scroll behavior */
+.nav-link,
+.nav-button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Header slide down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header {
+  animation: slideDown 0.5s ease-out;
+}
