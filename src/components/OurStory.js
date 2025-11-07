@@ -10,54 +10,54 @@ const OurStory = () => {
 
   const milestones = [
     {
-      year: "2018",
+      year: "2019",
       title: "Năm Đầu Tiên - Khởi Đầu Tình Yêu",
-      date: "05/10/2018",
+      date: "05/10/2018 - 2019",
       description:
         "Gặp nhau lần đầu dưới mái trường THPT Trần Phú - Hoàn Kiếm. Hai trái tim trẻ tuổi bắt đầu thổn thức bên nhau.",
       image: "/images/first-year.jpg",
       side: "left",
     },
     {
-      year: "2019",
+      year: "2020",
       title: "Năm Thứ Hai - Khám Phá Nhau",
-      date: "2019",
+      date: "2020",
       description:
         "Những chuyến đi đầu tiên, những cuộc hẹn hò ngọt ngào. Chúng mình học cách yêu thương và thấu hiểu nhau hơn mỗi ngày.",
       image: "/images/second-year.jpg",
       side: "right",
     },
     {
-      year: "2020",
+      year: "2021",
       title: "Năm Thứ Ba - Vượt Qua Thử Thách",
-      date: "2020",
+      date: "2021",
       description:
         "COVID-19 đến, khoảng cách địa lý thử thách tình yêu. Nhưng chúng mình vẫn bên nhau, xa mà gần, yêu thương không thay đổi.",
       image: "/images/third-year.jpg",
       side: "left",
     },
     {
-      year: "2021",
+      year: "2022",
       title: "Năm Thứ Tư - Trưởng Thành Cùng Nhau",
-      date: "2021",
+      date: "2022",
       description:
         "Bắt đầu sự nghiệp, theo đuổi đam mê. Bảo với âm nhạc, Phương với makeup. Ủng hộ nhau trong từng bước đi.",
       image: "/images/fourth-year.jpg",
       side: "right",
     },
     {
-      year: "2022",
+      year: "2023",
       title: "Năm Thứ Năm - Xây Dựng Ước Mơ",
-      date: "2022",
+      date: "2023",
       description:
         "Sự nghiệp phát triển, tình yêu thêm vững bền. Chúng mình bắt đầu nghĩ về tương lai, về một mái ấm chung.",
       image: "/images/fifth-year.jpg",
       side: "left",
     },
     {
-      year: "2023",
+      year: "2024",
       title: "Năm Thứ Sáu - Những Dấu Ấn Đáng Nhớ",
-      date: "2023",
+      date: "2024",
       description:
         "Những kỷ niệm ngọt ngào nhất, những chuyến du lịch đáng nhớ. Tình yêu của chúng mình đã trở thành một phần không thể thiếu của cuộc sống.",
       image: "/images/sixth-year.jpg",
@@ -199,7 +199,7 @@ const OurStory = () => {
         <div className="proposal-section" ref={proposalRef}>
           <div className="proposal-wrapper">
             <div className="proposal-ring-deco">💍</div>
-            <div className="proposal-year">2024-2025</div>
+            <div className="proposal-year">2025</div>
 
             <div className="proposal-content-wrapper">
               {/* Image - Polaroid style */}

@@ -95,7 +95,7 @@ const Header = () => {
             >
               Video
             </Link>
-            {/* <Link
+            <Link
               to="testimonial"
               spy={true}
               smooth={true}
@@ -105,7 +105,7 @@ const Header = () => {
               className="nav-link"
             >
               Lời Chúc
-            </Link> */}
+            </Link>
           </nav>
 
           {/* Save The Date Button bên phải */}

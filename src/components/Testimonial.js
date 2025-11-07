@@ -12,46 +12,42 @@ const Testimonial = () => {
 
   const testimonials = [
     {
-      name: "Nguyễn Văn A",
-      relationship: "Bạn thân Chung Bảo",
-      message:
-        "Được chứng kiến tình yêu của hai bạn suốt 7 năm qua, tôi tin rằng đây là tình yêu đích thực. Chúc hai bạn hạnh phúc mãi mãi!",
-      avatar: "A",
-    },
-    {
-      name: "Trần Thị B",
-      relationship: "Bạn thân Minh Phương",
-      message:
-        "Phương à, chị rất vui vì em đã tìm được người đàn ông xứng đáng. Bảo rất yêu thương và trân trọng em. Chúc hai em trăm năm hạnh phúc!",
-      avatar: "B",
-    },
-    {
-      name: "Lê Văn C",
-      relationship: "Đồng nghiệp",
-      message:
-        "Làm việc cùng Bảo nhiều năm, tôi thấy anh ấy là người đàn ông có trách nhiệm. Chúc hai bạn hạnh phúc và thành công!",
-      avatar: "C",
-    },
-    {
-      name: "Phạm Thị D",
-      relationship: "Khách hàng của Minh Phương",
-      message:
-        "Phương là người makeup artist tài năng và tốt bụng. Chúc hai bạn có một đám cưới thật đẹp và cuộc sống hôn nhân tràn ngập yêu thương!",
+      name: "Nguyễn Khánh Duy",
+      relationship: "D1 Airline",
+      message: "Xời chúc mừng hai bạn ! Ich wünsche euch beiden immer Glück !",
       avatar: "D",
     },
     {
-      name: "Hoàng Văn E",
-      relationship: "Bạn học cũ",
+      name: "Thanh Bình Trần",
+      relationship: "Bạn thân Minh Phương",
       message:
-        "Từ thời THPT đến giờ, tình yêu của hai bạn vẫn vẹn nguyên. Đó là điều hiếm có. Chúc mừng hai bạn!",
-      avatar: "E",
+        "Hạnh phúc 2 bạn nhóooo 🎉 nhớ là không đc bắt nạt bạn iu MP của chúng tuiii nhaaa Bảoooo :>>> cô ý có ctui là điểm tự đó nhaaaa",
+      avatar: "T",
     },
     {
-      name: "Ngô Thị F",
-      relationship: "Gia đình",
+      name: "Trần Thị Dung",
+      relationship: "Bác gái của Chung Bảo",
       message:
-        "Hai đứa rất hợp nhau. Chúc con gái và con rể của chúng tôi luôn hạnh phúc, yêu thương nhau mãi mãi!",
-      avatar: "F",
+        "Bác chúc mừng hạnh phúc hai con ❤️🥰luôn bên nhau hạnh phúc- thành đạt và bình an ❤️🥰🌺",
+      avatar: "D",
+    },
+    {
+      name: "Thanh Choé",
+      relationship: "Cô của Chung Bảo",
+      message: "Đẹp đôi quá ❤️ cô chúc hai con mãi mãi hạnh phúc nhé ❤️",
+      avatar: "C",
+    },
+    {
+      name: "Nguyễn Trường Sơn",
+      relationship: "Bạn thân Chung Bảo",
+      message: "Mọi thứ sau cánh cổng của tôi đều tươi đẹp 😍🎉",
+      avatar: "S",
+    },
+    {
+      name: "Trang N Cusick",
+      relationship: "Cô của Chung Bảo",
+      message: "Chúc mừng hai con, chúc hai con trăm năm hạnh phúc 😘",
+      avatar: "T",
     },
   ];
 
@@ -117,11 +113,16 @@ const Testimonial = () => {
           )}
         </div>
 
-        {/* <div className="guestbook-cta">
+        <div className="guestbook-cta">
           <h3>Gửi Lời Chúc Của Bạn</h3>
           <p>Hãy để lại lời chúc tốt đẹp cho chúng tôi!</p>
-          <button className="cta-button">Viết Lời Chúc</button>
-        </div> */}
+          <button
+            className="cta-button"
+            onClick={() => alert("Chức năng này đang được phát triển!")}
+          >
+            Viết Lời Chúc
+          </button>
+        </div>
       </div>
     </section>
   );

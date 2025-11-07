@@ -41,8 +41,8 @@ const SaveTheDate = () => {
               <FaCalendarAlt />
             </div>
             <h3>Ngày Cưới</h3>
-            <p className="info-detail">21 Tháng 11, 2025</p>
-            <p className="info-sub">Thứ Sáu</p>
+            <p className="info-detail">30 Tháng 11, 2025</p>
+            <p className="info-sub">Chủ Nhật</p>
           </div>
 
           <div className="info-card">
@@ -59,8 +59,10 @@ const SaveTheDate = () => {
               <FaMapMarkerAlt />
             </div>
             <h3>Địa Điểm</h3>
-            <p className="info-detail">Trung Tâm Tiệc Cưới</p>
-            <p className="info-sub">123 Đường ABC, Quận XYZ, Hà Nội</p>
+            <p className="info-detail">Trung Tâm Tiệc Cưới The One</p>
+            <p className="info-sub">
+              2 P. Chương Dương Độ, Chương Dương Độ, Hoàn Kiếm, Hà Nội
+            </p>
           </div>
         </div>
 
@@ -110,28 +112,22 @@ const SaveTheDate = () => {
 
         <div className="map-section">
           <h3>Bản Đồ</h3>
-          <div className="map-wrapper">
-            {/* Replace with actual Google Maps embed */}
-            <div className="map-placeholder">
-              <FaMapMarkerAlt />
-              <p>Google Maps</p>
-              <small>123 Đường ABC, Quận XYZ, Hà Nội</small>
+          <div className="map-container">
+            <div className="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.8383118853544!2d105.8589688!3d21.028529600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab0dfc6aa027%3A0xfaddf9cc7059a801!2sThe%20One%20Hanoi%20Wedding%20and%20Convention%20Centre!5e1!3m2!1svi!2s!4v1762531536860!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Bản Đồ Địa Điểm Cưới"
+              ></iframe>
             </div>
-            {/* 
-            Uncomment this when you have real address:
-            <iframe
-              src="https://www.google.com/maps/embed?pb=..."
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-            */}
           </div>
           <a
-            href="https://maps.google.com"
+            href="https://www.google.com/maps/place/The+One+Hanoi+Wedding+and+Convention+Centre/@21.0285296,105.8589688,813m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3135ab0dfc6aa027:0xfaddf9cc7059a801!8m2!3d21.0285296!4d105.8589688!16s%2Fg%2F11t7f674r0?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="direction-btn"
