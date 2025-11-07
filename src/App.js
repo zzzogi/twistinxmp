@@ -8,6 +8,7 @@ import MV from "./components/MV";
 // import Testimonial from "./components/Testimonial";
 import SaveTheDate from "./components/SaveTheDate";
 import Footer from "./components/Footer";
+import FloatingButtons from "./components/FloatingButtons";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       {/* <Testimonial /> */}
       <SaveTheDate />
       <Footer />
+      <FloatingButtons />
     </div>
   );
 }
