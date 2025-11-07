@@ -5,8 +5,8 @@ import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
 import OurStory from "./components/OurStory";
 import MV from "./components/MV";
-import Testimonial from "./components/Testimonial";
-// import SaveTheDate from "./components/SaveTheDate";
+// import Testimonial from "./components/Testimonial";
+import SaveTheDate from "./components/SaveTheDate";
 import Footer from "./components/Footer";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
       <AboutUs />
       <OurStory />
       <MV />
-      <Testimonial />
-      {/* <SaveTheDate /> */}
+      {/* <Testimonial /> */}
+      <SaveTheDate />
       <Footer />
     </div>
   );

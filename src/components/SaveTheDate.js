@@ -1,32 +1,32 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import {
   FaCalendarAlt,
   FaMapMarkerAlt,
   FaClock,
-  FaEnvelope,
+  // FaEnvelope,
 } from "react-icons/fa";
 import "./SaveTheDate.css";
 
 const SaveTheDate = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    guests: "1",
-    attending: "yes",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   guests: "1",
+  //   attending: "yes",
+  //   message: "",
+  // });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("RSVP submitted:", formData);
-    alert("Cảm ơn bạn đã xác nhận tham dự!");
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("RSVP submitted:", formData);
+  //   alert("Cảm ơn bạn đã xác nhận tham dự!");
+  // };
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
   return (
     <section className="savethedate section" id="savethedate">
@@ -140,7 +140,7 @@ const SaveTheDate = () => {
           </a>
         </div>
 
-        <div className="rsvp-section">
+        {/* <div className="rsvp-section">
           <h3>
             <FaEnvelope /> Xác Nhận Tham Dự
           </h3>
@@ -218,7 +218,7 @@ const SaveTheDate = () => {
               <button className="calendar-btn outlook">Outlook</button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

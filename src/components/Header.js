@@ -95,7 +95,7 @@ const Header = () => {
             >
               Video
             </Link>
-            <Link
+            {/* <Link
               to="testimonial"
               spy={true}
               smooth={true}
@@ -105,11 +105,11 @@ const Header = () => {
               className="nav-link"
             >
               Lời Chúc
-            </Link>
+            </Link> */}
           </nav>
 
           {/* Save The Date Button bên phải */}
-          {/* <Link
+          <Link
             to="savethedate"
             spy={true}
             smooth={true}
@@ -118,7 +118,7 @@ const Header = () => {
             className="nav-button"
           >
             Save The Date
-          </Link> */}
+          </Link>
 
           {/* Mobile menu icon */}
           <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
