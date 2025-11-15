@@ -71,7 +71,7 @@ const Header = () => {
               onClick={closeMobileMenu}
               className="nav-link"
             >
-              Về Chúng Tôi
+              Về Chúng Mình
             </Link>
             <Link
               to="story"
@@ -109,16 +109,9 @@ const Header = () => {
           </nav>
 
           {/* Save The Date Button bên phải */}
-          <Link
-            to="savethedate"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            className="nav-button"
-          >
+          <a href="https://cbxmpwedding.netlify.app" className="nav-button">
             Save The Date
-          </Link>
+          </a>
 
           {/* Mobile menu icon */}
           <div className="mobile-menu-icon" onClick={toggleMobileMenu}>

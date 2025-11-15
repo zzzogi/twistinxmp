@@ -20,7 +20,7 @@ const AboutUs = () => {
 
           {/* Description bên phải */}
           <div className="about-right">
-            <h2 className="about-title">Về Chúng Tôi</h2>
+            <h2 className="about-title">Về Chúng Mình</h2>
             <div className="about-subtitle">
               <span className="subtitle-name">Chung Bảo</span>
               <span className="subtitle-separator">&</span>
